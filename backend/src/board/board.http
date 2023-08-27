@@ -1,0 +1,8 @@
+POST http://localhost/board/create
+content-type: application/json
+
+{
+    "subject": "test1",
+    "content": "테스트 내용입니다.",
+    "writer": "test"
+}
