@@ -12,7 +12,7 @@ import { Board } from './entity/board.entity';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'rnrgml789',
+      password: 'apmsetup',
       database: 'board',
       entities: [Board],
       synchronize: true,

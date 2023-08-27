@@ -1,8 +1,11 @@
-POST http://localhost/board/create
-content-type: application/json
+POST http://localhost:8080/board/create
+content-type: application/json; charset=UTF-8
 
 {
     "subject": "test1",
     "content": "테스트 내용입니다.",
     "writer": "test"
 }
+
+### 전체
+GET http://localhost:8080/board

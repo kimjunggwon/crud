@@ -1,19 +1,16 @@
-import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { BaseEntity, Column, Entity, PrimaryGeneratedColumn, CreateDateColumn } from 'typeorm';
 
-@Entity()
-export class Board {
+@Entity({ name: 'board' })
+export class Board extends BaseEntity {
     @PrimaryGeneratedColumn()
-    id?: number;
+    id: string;
 
-    @Column()
+    @Column({ type: 'varchar', length: 255 })
     subject: string;
 
-    @Column()
+    @Column({ type: 'text'})
     content: string;
 
-    @Column()
+    @Column({ type: 'varchar', length: 255 })
     writer: string;
-
-    @Column({ default: true })
-    createdDt: Date = new Date();
 }
