@@ -18,7 +18,9 @@ export class BoardService {
 
     findOne(id: string): Promise<Board> {
         return this.boardRepository.findOne({
-            where: {id}
+            where: {
+                id: id
+            }
         });
     }
 

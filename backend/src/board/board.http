@@ -9,3 +9,17 @@ content-type: application/json; charset=UTF-8
 
 ### 전체
 GET http://localhost:8080/board
+
+### 상세
+GET http://localhost:8080/board/1
+
+### 수정
+
+PUT http://localhost:8080/board/update/8
+content-Type: application/json; charset=UTF-8
+
+{
+    "subject": "test2",
+    "content": "test3",
+    "writer": "test2"
+}

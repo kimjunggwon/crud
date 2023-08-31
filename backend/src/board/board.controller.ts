@@ -11,9 +11,10 @@ export class BoardController {
         return this.boardService.findAll();
     }
 
-    @Get('/:id')
+    @Get(':id')
     findOne(@Param('id') id: string) {
-        this.boardService.findOne(id);
+        const data = this.boardService.findOne(id);
+        return data;
     }
 
     @Post('/create')
